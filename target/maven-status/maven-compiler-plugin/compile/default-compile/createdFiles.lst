@@ -1,0 +1,10 @@
+com/example/privatechat/ChatController$SendMessageRequest.class
+com/example/privatechat/PrivateChatApplication.class
+com/example/privatechat/AuthController.class
+com/example/privatechat/ChatMessageRepository.class
+com/example/privatechat/AppUserRepository.class
+com/example/privatechat/AppUser.class
+com/example/privatechat/AuthController$RegistrationRequest.class
+com/example/privatechat/SecurityConfig.class
+com/example/privatechat/ChatController.class
+com/example/privatechat/ChatMessage.class

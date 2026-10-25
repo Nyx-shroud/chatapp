@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Private Chat Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="auth-container">
+        <h2>Private Chat Gateway</h2>
+        <input type="text" id="username" placeholder="Username" minlength="3" maxlength="32" autocomplete="username">
+        <input type="password" id="password" placeholder="Password" minlength="8" maxlength="72" autocomplete="current-password">
+        <div class="btn-group">
+            <button onclick="login()">Log In</button>
+            <button onclick="register()">Register</button>
+        </div>
+        <p id="auth-error" class="error"></p>
+    </div>
+
+    <div id="chat-container" class="hidden">
+        <div class="sidebar">
+            <h3>Welcome, <span id="current-user"></span></h3>
+            <button onclick="logout()" class="logout-btn">Log Out</button>
+            <h4>Active Contacts</h4>
+            <ul id="users-list"></ul>
+        </div>
+        <div class="chat-area">
+            <h3 id="chat-target">Select a contact to begin</h3>
+            <p id="chat-error" class="error" role="status"></p>
+            <div id="messages-box"></div>
+            <div id="input-box" class="hidden">
+                <input type="text" id="message-text" placeholder="Type your message..." maxlength="2000">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
